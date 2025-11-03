@@ -1,0 +1,10 @@
+[project]
+name = "Programming-I_Final_Project"
+version = "0.1.0"
+description = "Project description"
+dependencies = [
+    "matplotlib",
+    "pandas",
+    "random",
+    "ipykernel",
+]
