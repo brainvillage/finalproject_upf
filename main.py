@@ -180,7 +180,7 @@ def create_additional_analysis(city, host_data):
 
 
 def main():
-    """Main function to run the complete simulation and analysis."""
+    
     print("Starting Airbnb Market Simulation")
     print("=" * 40)
     
