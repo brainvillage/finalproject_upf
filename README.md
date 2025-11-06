@@ -2,6 +2,6 @@
 
 **Final project of our Programming I class at UPF**
 
-## Our Project is about X
+## Our Project is about AirBnB Simulation
 
 
