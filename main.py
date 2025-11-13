@@ -5,7 +5,9 @@ import os
 from src.city import City
 
 
-def set_random_seed(seed=42):
+def set_random_seed(seed=None):
+    if seed is None:
+        seed = radnom.randint(0, 2**32-1)
     random.seed(seed)
     np.random.seed(seed)
 
@@ -28,7 +30,9 @@ def calculate_host_wealth(host, city):
 def run_simulation():
 
     # Set random seed for reproducible results
-    set_random_seed(42)
+    # Change the number below to get different (but still reproducible) results
+    # Or use None to get completely random results each time
+    set_random_seed(42)  # Keep this for your final submission
     
     # Define simulation parameters
     city_size = 10
