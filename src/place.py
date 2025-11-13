@@ -1,6 +1,5 @@
 import random
 
-
 class Place:
     
     def __init__(self, place_id, host_id, city):
