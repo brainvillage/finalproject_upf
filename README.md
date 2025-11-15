@@ -1,10 +1,10 @@
 # UPF Programming I final project
 
 ## Group Members
-** | Jade Tilman
-joanhortalabas | Joan Hortalà i Bas
-** | Juri Genthner
-brainvillage | Tim Hirndorf
+** | Jade Tilman. 
+joanhortalabas | Joan Hortalà i Bas. 
+** | Juri Genthner. 
+brainvillage | Tim Hirndorf. 
 
 ## Project Description
 This project simulates an Airbnb-like booking system, analyzing real data from 2 cities (Barcelona and Berlin) and implements booking algorithms.
