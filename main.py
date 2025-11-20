@@ -20,7 +20,7 @@ def calculate_host_wealth(host, city):
     for place_id in host.assets:
         place = city.get_place(place_id)
         if place and place.price:
-            # Get the most recent price (highest step number)
+            # Get the most recent price
             most_recent_price = max(place.price.values())
             wealth += most_recent_price
     
