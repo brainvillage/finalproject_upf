@@ -17,7 +17,6 @@ class City:
         
         # Dictionary for quick place lookup by ID
         self._place_dict = {}
-        self.same_area_rule = False
         
         # Initialize the city
         self.initialize()

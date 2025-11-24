@@ -86,7 +86,7 @@ class Host:
                         opportunities.add(neighbor_id)
         
         # For each opportunity, evaluate and potentially make a bid
-        for opportunity_id in opportunities:
+        for opportunity_id in opportunities: 
             opportunity_place = self.city.get_place(opportunity_id)
             if opportunity_place is None:
                 continue
@@ -100,7 +100,7 @@ class Host:
             
             # If host's available profits are greater than or equal to asking price
             if self.profits >= ask_price:
-                if getattr(self.city, "same_area_rule", False) and opportunity_place.area != self.area:
+                if opportunity_place.area != self.area:
                     # Different area and rule is active → skip this opportunity
                     continue
                 # Create a bid dictionary
