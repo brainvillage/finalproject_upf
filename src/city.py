@@ -17,6 +17,7 @@ class City:
         
         # Dictionary for quick place lookup by ID
         self._place_dict = {}
+        self.same_area_rule = False
         
         # Initialize the city
         self.initialize()
@@ -151,10 +152,14 @@ class City:
         # Collect all bids from hosts
         all_bids = []
         for host in self.hosts:
-            host_bids = host.make_bids()
+            # Use make_bids_v02 if same_area_rule is enabled
+            if self.same_area_rule:
+                host_bids = host.make_bids_v02()
+            else:
+                host_bids = host.make_bids()
             all_bids.extend(host_bids)
         
-        # Approve bids (sort, filter, and approve transactions)
+        # Approve bids
         approved_transactions = self.approve_bids(all_bids)
         
         # Execute approved transactions
