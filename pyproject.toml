@@ -5,6 +5,5 @@ description = "Project description"
 dependencies = [
     "matplotlib",
     "pandas",
-    "random",
     "ipykernel",
 ]
